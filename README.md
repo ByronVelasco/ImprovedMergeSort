@@ -2,23 +2,22 @@
 
 ## **Summary**
 
-This project focuses on optimizing the classic MergeSort algorithm by introducing a hybrid approach that uses InsertionSort for sorting small sublists.  
-Through experimental testing, the impact of different sublist size thresholds (`k`) on overall performance was analyzed and compared against standard MergeSort and QuickSort implementations.
+This project focuses on optimizing the classic Merge Sort algorithm by introducing a hybrid approach that uses Insertion Sort for sorting small sublists. Through experimental testing, the impact of different sublist size thresholds (`k`) on overall performance was analyzed and compared against standard Merge Sort and Quick Sort implementations.
 
 ## **Objectives**
 
-- Implement an Improved MergeSort that uses InsertionSort for sublists smaller than a defined threshold.
+- Implement an Improved Merge Sort algorithm that uses Insertion Sort for sublists smaller than a defined threshold.
 - Analyze the effect of varying the threshold (`k`) on execution time.
-- Compare the performance of the Improved MergeSort against standard MergeSort and QuickSort.
+- Compare the performance of the Improved Merge Sort against standard Merge Sort and Quick Sort.
 - Validate the empirical complexity of the algorithm and confirm its correctness across multiple test cases.
 
 ## **Conclusion**
 
-This project explored the optimization of the classic MergeSort algorithm by introducing a hybrid approach that uses InsertionSort for small sublists.
+This project explored the optimization of the classic Merge Sort algorithm by introducing a hybrid approach that uses Insertion Sort for small sublists.
 
 Through experimental analysis, it was demonstrated that:
 - Dividing the list into sublists of approximately 16 elements significantly improves execution time.
-- The Improved MergeSort consistently outperforms both standard MergeSort and QuickSort across various input sizes.
+- The Improved MergeSort consistently outperforms both standard Merge Sort and Quick Sort across various input sizes.
 - The optimization becomes increasingly effective as the list size grows, confirming better scalability.
 
 These results validate the strategy of combining simple sorting algorithms for small data blocks with more complex algorithms for larger merges, achieving a balance between overhead and sorting efficiency.  
@@ -28,44 +27,21 @@ Future work could focus on fine-tuning the threshold dynamically based on system
 
 The repository is organized into the following components:
 
-- **Individual Algorithm Folders**:  
-  Each sorting algorithm is placed in its own folder. The ImprovedMergeSort folder contains a detailed explanation in its corresponding `README.md`. For the other algorithms, refer to my other project: [Sorting Algorithms](https://github.com/ByronVelasco/SortingAlgorithms).
+- `1 Finding optimal k` Folder:
 
-- **`Tests/` Folder**:  
-  Contains test scripts that evaluate the correctness and behavior of each sorting algorithm.
+   This folder contains the implementation of the `improved_merge_sort` algorithm, along with experiments to determine the optimal threshold (`k`) for switching to Insertion Sort. It includes code, analysis, and results related to finding the most effective value of `k` for maximizing sorting performance.
 
-- **`img/` Folder**:  
-  Stores the output images generated during experimentation.
+- `2 Improved Merge Sort` Folder:
 
-- **`4 ComplexityMachine/` Folder**:  
-  Contains the notebook `ComplexityMachine.ipynb`, which performs the experimental analysis of sorting algorithms and presents the conclusions.
+   This folder contains the implementation of algorithms `merge_sort`, `improved_merge_sort` and `quick_sort` and their performance comparison with each other. It includes an experiment measuring and analyzing their execution times.
 
-## **How to Run This Project**
+- `img` Folder:
 
-1. **Clone the repository**  
-   Open a terminal and run:
+   Stores the output images generated during experimentation.
 
-   ```bash
-   git clone https://github.com/ByronVelasco/ImprovedMergeSort.git
-   cd ImprovedMergeSort
+- `project_functions.py` Python Script:
 
-2. **Install the required libraries**
-   
-   Make sure you have Python installed (preferably 3.8+), then install the dependencies:
-   
-   ```bash
-   pip install -r requirements.txt
-
-3. **Open the main notebook**
-   
-   Use your preferred Python environment (like Jupyter, VS Code, or Google Colab) and open:
-
-   ```
-   4 ComplexityMachine/ComplexityMachine.ipynb
-
-4. **Run** the cells to perform the experiments and generate the visualizations.
-
-   The results will be displayed directly in the notebook, and the corresponding graphs will be saved in the `img/` folder.
+   This Python script includes all the sorting algorithms developed specifically for this project.
 
 ## **Final Note**
 
@@ -94,5 +70,7 @@ This project follows the structure and theoretical foundations presented in the 
 - The **educational content** (including explanations, diagrams, and documentation) is shared under the  
   [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).  
   You may reuse and adapt it for non-commercial purposes with attribution.
+
+---
 
 © 2025 Byron Velasco
