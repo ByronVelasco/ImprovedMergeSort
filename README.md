@@ -43,6 +43,10 @@ The repository is organized into the following components:
 
    This Python script includes all the sorting algorithms developed specifically for this project.
 
+- `requirements.txt` Text File:
+
+   This file lists all the dependencies required to run the project.
+
 ## **Final Note**
 
 The system developed for this project was created solely for academic purposes. It is not designed to be an optimal or production-grade benchmarking tool.
